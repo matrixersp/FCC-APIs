@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercise Tracker</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Exercise Tracker</h1>
+  </header>
+
+  <main>
+
+    <form action="/api/exercise/new-user" method="post">
+      <h2>Create a New User</h2>
+      <p>
+        <code>POST /api/exercise/new-user</code>
+      </p>
+      <input name="username" type="text" maxlength="100" placeholder="username">
+      <button type="submit">Submit</button>
+    </form>
+
+    <form action="/api/exercise/add" method="post">
+      <h2>Add Exercises</h2>
+      <p>
+        <code>POST /api/exercise/add</code>
+      </p>
+      <input name="userId" type="text" placeholder="userId*">
+      <input name="description" type="text" placeholder="description*">
+      <input name="duration" type="text" placeholder="duration* (mins.)">
+      <input name="date" type="text" placeholder="date (yyyy-mm-dd)">
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="description">
+      <p><strong>GET users's exercise log:</strong> <code>GET /api/exercise/log?{userId}[&from][&to][&limit]</code></p>
+      <p><strong>{ }</strong> = required, <strong>[ ]</strong> = optional</p>
+      <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+    </div>
+
+  </main>
+
+  <footer>
+    By <a href="https://github.com/matrixersp">matrixersp</a>!
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #ffffcc;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 25px 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+form h2,
+form p {
+  text-align: left;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+  width: 100%;
+  padding: 4px;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+.description {
+  text-align: left;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+footer {
+  margin: 50px auto 20px;
+}
